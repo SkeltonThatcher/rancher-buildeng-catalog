@@ -6,7 +6,7 @@ gocd-server:
   - ebs1:/godata
   volume_driver: rancher-ebs
   entrypoint: /bin/true
-  image: gocd/gocd-server:v17.3
+  image: gocd/gocd-server:v17.3.0
   environment:
   - SERVER_MEM=${mem_initial}m
   - SERVER_MAX_MEM=${mem_max}m

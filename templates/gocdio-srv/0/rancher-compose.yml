@@ -1,6 +1,6 @@
 .catalog:
-  name: gocd-srv
-  version: 17.3-rancher1
+  name: gocdio-srv
+  version: 17.3.0-rancher
   description: |
     (Experimental) STCL GoCD server.
   maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com>"
