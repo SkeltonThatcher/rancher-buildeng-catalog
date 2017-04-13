@@ -2,7 +2,8 @@
 .catalog:
   name: gocdio-server
   version: 17.3.0-rancher
-  description: gocdio-server
+  description: |
+    STCL GoCD Server
   maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com"
   tested_rancher_version: v1.5.3
   uuid: goserver-0
