@@ -1,5 +1,5 @@
 .catalog:
-  name: gocdio-server-agent
+  name: gocdio-agent
   version: 17.3.0-rancher
   description: |
     STCL GoCD Agent
@@ -44,6 +44,6 @@
       required: true
       default: 1234567890-0987654321-1234567890
       type: "string"
-gocd-agent:
+gocdio-agent:
   scale: ${scale}
   retain_ip: true
