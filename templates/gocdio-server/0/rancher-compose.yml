@@ -43,7 +43,7 @@
       label: "Driver volume:"
       default: "ebs"
       required: true
-      type: enum
+      type: "string"
 gocdio-server:
   scale: 1
   retain_ip: true
