@@ -1,17 +1,10 @@
-# Gocd agent (Experimental)
+# STCL GoCD Agent
 
 ### Info:
 
- This template creates and configure a gocd server agent.
- 
- 
+ This template creates and configure a GoCD server agent.
+
+
 ### Usage:
 
- Select gocd-agent from catalog. 
- 
- Enter the mem parameters, gocd-server stack/service and port.
- 
- Click deploy.
- 
- gocd-agent can now be accessed over the Rancher network. 
- 
+ Info to follow
