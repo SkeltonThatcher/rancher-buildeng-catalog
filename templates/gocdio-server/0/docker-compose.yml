@@ -3,8 +3,9 @@ gocdio-server:
     gocd.role: server
   tty: true
   image: gocd/gocd-server:v17.3.0
-  volumes_from:
-  - gocdio-volume
+  volumes:
+  - ${volume_data}:/godata
+  volume_driver: ${volume_driver}
   environment:
   - SERVER_MEM=${mem_initial}m
   - SERVER_MAX_MEM=${mem_max}m
@@ -13,14 +14,3 @@ gocdio-server:
   - ${ssh_port}:8154
   labels:
     io.rancher.container.hostname_override: container_name
-    io.rancher.sidekicks: gocdio-volume
-gocdio-volume:
-  net: none
-  labels:
-    io.rancher.container.hostname_override: container_name
-    io.rancher.container.start_once: true
-  volumes:
-  - ${volume_data}:/godata
-  volume_driver: ${volume_driver}
-  entrypoint: /bin/true
-  image: busybox
