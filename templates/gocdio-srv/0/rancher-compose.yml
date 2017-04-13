@@ -1,11 +1,12 @@
+
 .catalog:
-  name: gocdio-srv
+  name: gocd-server
   version: 17.3.0-rancher
   description: |
-    (Experimental) STCL GoCD server.
-  maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com>"
+    (Experimental) GoCD Server.
+  maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com"
   tested_rancher_version: v1.5.3
-  uuid: gocdsrv-0
+  uuid: goserver-0
   questions:
     - variable: public_port
       description: "public port to access the gocd server"
@@ -31,7 +32,23 @@
       required: true
       default: 1024
       type: "int"
-gocd-srv:
+    - variable: "volume_data"
+      description: "Volume to save goserver data"
+      label: "Data volume:"
+      required: true
+      default: "ebs"
+      type: "string"
+    - variable: "volume_driver"
+      label: "Driver volume:"
+      description: |
+        Choose the volume driver to use.
+      default: local
+      required: true
+      type: enum
+      options:
+        - local
+        - rancher-ebs
+gocd-server:
   scale: 1
   retain_ip: true
   health_check:
