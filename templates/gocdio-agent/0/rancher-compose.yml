@@ -21,7 +21,7 @@
       type: "int"
     - variable: "goserver_ip"
       description: |
-        Choose the GoCD service to connect. 
+        Choose the GoCD service to connect.
       label: "GoCD server stack/service"
       default: "gocdio-server/gocdio-server"
       required: true
@@ -37,6 +37,12 @@
       label: "Instances:"
       required: true
       default: 1
+      type: "int"
+    - variable: "reg_key"
+      description: "Auto register"
+      label: "Agent registration key"
+      required: true
+      default: 1234567890-0987654321-1234567890
       type: "int"
 gocd-agent:
   scale: ${scale}

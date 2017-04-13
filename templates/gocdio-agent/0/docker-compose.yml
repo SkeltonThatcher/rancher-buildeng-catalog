@@ -10,7 +10,7 @@ gocdio-agent:
   environment:
   - AGENT_MEM=${mem_initial}m
   - AGENT_MAX_MEM=${mem_max}m
-  - AGENT_AUTO_REGISTER_KEY=388b633a88de126531afa41eff9aa69e
+  - AGENT_AUTO_REGISTER_KEY=${reg_key}
   - GO_SERVER=gocdio-server.rancher.internal
   - GO_SERVER_PORT=${goserver_port}
   volumes:
