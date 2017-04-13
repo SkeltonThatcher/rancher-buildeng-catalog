@@ -1,10 +1,10 @@
 .catalog:
-  name: gocd-agent
-  version: 16.2.1-rancher1
+  name: gocdio-server-agent
+  version: 17.3.0-rancher
   description: |
-    (Experimental) GoCD agent.
-  maintainer: "Raul Sanchez <rawmind@gmail.com>"
-  minimum_rancher_version: v0.59.0
+    STCL GoCD Agent
+  maintainer: "Richard Bosomworth <richard.bosomworth@skeltonthatcher.com"
+  tested_rancher_version: v1.5.3
   uuid: goagent-0
   questions:
     - variable: "mem_initial"
@@ -21,19 +21,19 @@
       type: "int"
     - variable: "goserver_ip"
       description: |
-        Choose the gocd service to connect. 
-      label: "Gocd server stack/service"
-      default: "gocd-sever/gocd-server"
+        Choose the GoCD service to connect. 
+      label: "GoCD server stack/service"
+      default: "gocdio-server/gocdio-server"
       required: true
       type: "service"
     - variable: "goserver_port"
-      description: "Gocd server port"
-      label: "Goserver port:"
+      description: "GoCD server port"
+      label: "GoCD server port:"
       required: true
       default: 8153
       type: "int"
     - variable: "scale"
-      description: "Gocd agent instances"
+      description: "GoCD agent instances"
       label: "Instances:"
       required: true
       default: 1
