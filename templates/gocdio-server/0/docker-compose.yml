@@ -1,10 +1,10 @@
-gocd-server:
+gocdio-server:
   labels:
     gocd.role: server
   tty: true
   image: gocd/gocd-server:v17.3.0
   volumes_from:
-  - gocd-volume
+  - gocdio-volume
   environment:
   - SERVER_MEM=${mem_initial}m
   - SERVER_MAX_MEM=${mem_max}m
@@ -13,8 +13,8 @@ gocd-server:
   - ${ssh_port}:8154
   labels:
     io.rancher.container.hostname_override: container_name
-    io.rancher.sidekicks: gocd-volume
-gocd-volume:
+    io.rancher.sidekicks: gocdio-volume
+gocdio-volume:
   net: none
   labels:
     io.rancher.container.hostname_override: container_name

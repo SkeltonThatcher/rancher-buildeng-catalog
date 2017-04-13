@@ -1,6 +1,6 @@
 
 .catalog:
-  name: gocd-server
+  name: gocdio-server
   version: 17.3.0-rancher
   description: |
     (Experimental) STCL GoCD Server.
@@ -48,7 +48,7 @@
       options:
         - local
         - rancher-ebs
-gocd-server:
+gocdio-server:
   scale: 1
   retain_ip: true
   health_check:
