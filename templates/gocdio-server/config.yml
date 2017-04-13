@@ -1,6 +1,6 @@
 name: gocdio-server
 description: |
-  (Experimental) STCL GoCD server
+  STCL GoCD server
 version: 17.3.0-rancher
 category: Continuous Integration
 maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com>"

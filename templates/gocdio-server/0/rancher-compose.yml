@@ -3,7 +3,7 @@
   name: gocdio-server
   version: 17.3.0-rancher
   description: |
-    (Experimental) STCL GoCD Server.
+    STCL GoCD Server.
   maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com"
   tested_rancher_version: v1.5.3
   uuid: goserver-0
@@ -39,15 +39,11 @@
       default: "ebs"
       type: "string"
     - variable: "volume_driver"
+      description: "The volume driver type"
       label: "Driver volume:"
-      description: |
-        Choose the volume driver to use.
-      default: local
+      default: "ebs"
       required: true
       type: enum
-      options:
-        - local
-        - rancher-ebs
 gocdio-server:
   scale: 1
   retain_ip: true
