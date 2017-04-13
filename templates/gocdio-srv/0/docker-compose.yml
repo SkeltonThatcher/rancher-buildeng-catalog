@@ -1,0 +1,17 @@
+gocd-server:
+  labels:
+    gocd.role: server
+  tty: true
+  volumes:
+  - ebs1:/godata
+  volume_driver: rancher-ebs
+  entrypoint: /bin/true
+  image: gocd/gocd-server:v17.3
+  environment:
+  - SERVER_MEM=${mem_initial}m
+  - SERVER_MAX_MEM=${mem_max}m
+  ports:
+  - ${public_port}:8153
+  - ${ssh_port}:8154
+  labels:
+    io.rancher.container.hostname_override: container_name
