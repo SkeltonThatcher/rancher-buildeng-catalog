@@ -41,7 +41,7 @@
     - variable: "volume_driver"
       description: "The volume driver type"
       label: "Driver volume:"
-      default: "ebs"
+      default: "rancher-ebs"
       required: true
       type: "string"
 gocdio-server:
