@@ -1,4 +1,4 @@
-# STCL GoCD server
+# STCL Gocd server
 
 ### Info:
 

@@ -1,4 +1,4 @@
-gocdio-server:
+gocd-server:
   labels:
     gocd.role: server
   tty: true
@@ -14,13 +14,13 @@ gocdio-server:
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.sidekicks: gocd-volume
-gocdio-volume:
+gocd-volume:
   net: none
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.container.start_once: true
   volumes:
-  - ${volume_data}:/godata
+  - ${volume_work}:/godata
   volume_driver: ${volume_driver}
   entrypoint: /bin/true
   image: busybox

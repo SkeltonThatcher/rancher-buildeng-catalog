@@ -1,4 +1,4 @@
-name: gocdio-server
+name: gocd-server
 description: |
   (Experimental) STCL GoCD server
 version: 17.3.0-rancher
