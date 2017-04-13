@@ -1,0 +1,60 @@
+
+.catalog:
+  name: gocd-server
+  version: 17.3.0-rancher
+  description: |
+    (Experimental) STCL GoCD Server.
+  maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com"
+  tested_rancher_version: v1.5.3
+  uuid: goserver-0
+  questions:
+    - variable: public_port
+      description: "public port to access the gocd server"
+      label: "Public Port"
+      required: true
+      default: "8153"
+      type: "int"
+    - variable: ssh_port
+      description: "port for remote access of go-agents"
+      label: "SSH Port"
+      required: true
+      default: "8154"
+      type: "int"
+    - variable: "mem_initial"
+      description: "Initial java memory in Mb"
+      label: "Initial memory:"
+      required: true
+      default: 512
+      type: "int"
+    - variable: "mem_max"
+      description: "Max java memory in Mb"
+      label: "Max memory:"
+      required: true
+      default: 1024
+      type: "int"
+    - variable: "volume_data"
+      description: "Volume to save goserver data"
+      label: "Data volume:"
+      required: true
+      default: "ebs"
+      type: "string"
+    - variable: "volume_driver"
+      label: "Driver volume:"
+      description: |
+        Choose the volume driver to use.
+      default: local
+      required: true
+      type: enum
+      options:
+        - local
+        - rancher-ebs
+gocd-server:
+  scale: 1
+  retain_ip: true
+  health_check:
+    port: 8153
+    interval: 5000
+    unhealthy_threshold: 5
+    request_line: GET /go/agents HTTP/1.0
+    healthy_threshold: 2
+    response_timeout: 5000

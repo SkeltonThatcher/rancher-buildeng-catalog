@@ -1,0 +1,8 @@
+name: gocd-server
+description: |
+  (Experimental) STCL GoCD server
+version: 17.3.0-rancher
+category: Continuous Integration
+maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com>"
+tested_rancher_version: v1.5.3
+license:
