@@ -1,4 +1,5 @@
-.catalog:
+version: '2'
+catalog:
   name: gocdio-agent
   version: 17.3.0-rancher
   description: |

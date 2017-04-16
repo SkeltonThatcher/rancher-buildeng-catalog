@@ -1,5 +1,6 @@
 
-.catalog:
+version: '2'
+catalog:
   name: gocdio-server
   version: 17.3.0-rancher
   description: |
