@@ -5,7 +5,7 @@ gocdio-server:
   tty: true
   image: gocd/gocd-server:v17.3.0
   volumes:
-  - ${volume_data}:/godata
+  - ${data_volume}:/godata
   volume_driver: ${volume_driver}
   environment:
   - SERVER_MEM=${mem_initial}m
