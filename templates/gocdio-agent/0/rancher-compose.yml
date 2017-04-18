@@ -7,12 +7,6 @@
   tested_rancher_version: v1.5.3
   uuid: goagent-0
   questions:
-    - variable: "jvm_options"
-      description: "JVM options for memory, heap etc"
-      label: "JVM Options"
-      required: true
-      default: -Xms512m -Xmx1024m
-      type: "string"
     - variable: "goserver_ip"
       description: |
         Choose the GoCD service to connect.

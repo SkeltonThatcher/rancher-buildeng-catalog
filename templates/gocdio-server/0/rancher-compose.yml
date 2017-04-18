@@ -19,12 +19,6 @@
       required: true
       default: "8154"
       type: "int"
-    - variable: "jvm_options"
-      description: "JVM options for memory, heap etc"
-      label: "JVM Options"
-      required: true
-      default: -Xms512m -Xmx1024m
-      type: "string"
     - variable: "data_volume"
       description: "Volume to save goserver data"
       label: "Data volume:"

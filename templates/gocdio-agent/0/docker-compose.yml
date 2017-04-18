@@ -8,7 +8,6 @@ gocdio-agent:
   external_links:
   - ${goserver_ip}:gocdio-server
   environment:
-  - GO_AGENT_SYSTEM_PROPERTIES=${jvm_options}
   - AGENT_AUTO_REGISTER_KEY=${reg_key}
   - GO_SERVER=gocdio-server.rancher.internal
   - GO_SERVER_PORT=${goserver_port}

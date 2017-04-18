@@ -9,7 +9,6 @@ gocdio-server:
   environment:
   - SERVER_MEM=${mem_initial}m
   - SERVER_MAX_MEM=${mem_max}m
-  - GO_SERVER_SYSTEM_PROPERTIES=${jvm_options}
   ports:
   - ${public_port}:8153
   - ${ssh_port}:8154

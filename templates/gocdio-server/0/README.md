@@ -18,13 +18,7 @@
  volumeType = gp2
  size = 10
  ```
-
- Input JVM settings for memory, heap etc within the stack options, e.g:
-
- ```
- -Xms512m -Xmx1024m
- ```
-
+ 
  Launch the stack.
 
  The GoCD server will be available at http://<HOST_IP>:8153
