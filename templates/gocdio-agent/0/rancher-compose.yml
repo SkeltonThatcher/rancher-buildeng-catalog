@@ -24,11 +24,11 @@
       description: "GoCD agent instances"
       label: "Instances:"
       required: true
-      default: 1
+      default: 2
       type: "int"
     - variable: "reg_key"
-      description: "Auto register"
-      label: "Agent registration key"
+      description: "Reg key"
+      label: "GoCD server auto registration key"
       required: true
       default: 1234567890-0987654321-1234567890
       type: "string"
