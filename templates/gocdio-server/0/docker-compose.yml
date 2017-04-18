@@ -1,4 +1,3 @@
-version: '2'
 gocdio-server:
   labels:
     gocd.role: server

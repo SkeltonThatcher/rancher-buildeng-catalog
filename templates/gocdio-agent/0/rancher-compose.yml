@@ -1,7 +1,6 @@
-version: '2'
-catalog:
+.catalog:
   name: gocdio-agent
-  version: 17.3.0-rancher
+  version: 17.3.0-rancher1
   description: |
     STCL GoCD Agent
   maintainer: "Richard Bosomworth <richard.bosomworth@skeltonthatcher.com"

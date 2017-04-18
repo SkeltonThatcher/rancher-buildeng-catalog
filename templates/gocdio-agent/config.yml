@@ -1,6 +1,6 @@
 name: gocdio-agent
 description: |
-  STCL GoCD agent
+  STCL GoCD agent1
 version: 17.3.0-rancher
 category: Continuous Integration
 maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com"
