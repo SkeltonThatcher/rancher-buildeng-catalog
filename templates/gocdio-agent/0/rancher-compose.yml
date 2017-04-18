@@ -8,17 +8,11 @@ catalog:
   tested_rancher_version: v1.5.3
   uuid: goagent-0
   questions:
-    - variable: "mem_initial"
-      description: "Initial java memory in Mb"
-      label: "Initial memory:"
+    - variable: "jvm_options"
+      description: "JVM options for memory, heap etc"
+      label: "JVM Options"
       required: true
-      default: 512
-      type: "int"
-    - variable: "mem_max"
-      description: "Max java memory in Mb"
-      label: "Max memory:"
-      required: true
-      default: 1024
+      default: -Xms512m -Xmx1024m
       type: "int"
     - variable: "goserver_ip"
       description: |
