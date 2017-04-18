@@ -13,7 +13,7 @@ catalog:
       label: "JVM Options"
       required: true
       default: -Xms512m -Xmx1024m
-      type: "int"
+      type: "string"
     - variable: "goserver_ip"
       description: |
         Choose the GoCD service to connect.

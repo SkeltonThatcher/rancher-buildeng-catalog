@@ -25,7 +25,7 @@ catalog:
       label: "JVM Options"
       required: true
       default: -Xms512m -Xmx1024m
-      type: "int"
+      type: "string"
     - variable: "volume_data"
       description: "Volume to save goserver data"
       label: "Data volume:"
