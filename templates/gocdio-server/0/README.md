@@ -14,8 +14,8 @@
 
  Set the volume size and type pairs, e.g:
 
- ```volumeType = gp2
- size = 10```
+ `volumeType = gp2`
+ `size = 10`
 
  Input JVM settings for memory, heap etc within the stack options, e.g:
 
