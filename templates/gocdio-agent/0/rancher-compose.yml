@@ -27,8 +27,8 @@
       default: 2
       type: "int"
     - variable: "reg_key"
-      description: "Reg key"
-      label: "GoCD server auto registration key"
+      description: "GoCD server auto registration key"
+      label: "Reg key"
       required: true
       default: 1234567890-0987654321-1234567890
       type: "string"
