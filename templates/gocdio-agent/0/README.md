@@ -14,4 +14,4 @@
 
 ### Optional:
 
-   To force agents to run on a different host to the server, specify a service scheduling rule for 'Must not' against the GoCD server 'Container label' value.
+   To force agents to run on a different host to the server, specify a service scheduling rule for 'Must not' against the GoCD server 'Service with name' value.
