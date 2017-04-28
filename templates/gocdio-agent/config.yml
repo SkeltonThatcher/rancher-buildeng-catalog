@@ -1,0 +1,5 @@
+name: gocdio-agent
+description: |
+  STCL-TECH GoCD agent
+category: Continuous Integration
+maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com"
