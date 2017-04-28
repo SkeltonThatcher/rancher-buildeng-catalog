@@ -1,10 +1,10 @@
 .catalog:
   name: gocdio-agent
-  version: 17.3.0-rancher1
+  version: 17.4.0-rancher1
   description: |
     STCL GoCD Agent
   maintainer: "Richard Bosomworth <richard.bosomworth@skeltonthatcher.com"
-  tested_rancher_version: v1.5.3
+  tested_rancher_version: v1.5.6
   uuid: goagent-0
   questions:
     - variable: "goserver_ip"
