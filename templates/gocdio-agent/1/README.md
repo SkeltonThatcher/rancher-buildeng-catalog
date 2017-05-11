@@ -2,7 +2,7 @@
 
 ### Info:
 
- To be used only with the STCL-Tech GoCD Terraform plan - https://github.com/SkeltonThatcher/aws-terraform-rancher-single-node-ha-gocd
+ To be used only with the [STCL-Tech GoCD Terraform plan](https://github.com/SkeltonThatcher/aws-terraform-rancher-single-node-ha-gocd)
 
  This template creates and configures GoCD agent(s).
 
