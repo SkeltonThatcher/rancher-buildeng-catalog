@@ -2,7 +2,7 @@
 
 ### Info:
 
- To be used only with the STCL-Tech GoCD Terraform plan - https://github.com/SkeltonThatcher/aws-terraform-rancher-single-node-ha-gocd
+ To be used only with the [SkeltonThatcher Rancher/GoCD Terraform plan](https://github.com/SkeltonThatcher/aws-terraform-rancher-single-node-ha-gocd)
 
  Creates and configures a GoCD server instance with data HA.
 
@@ -23,7 +23,7 @@
 
  Add the GoCD server stack.
 
- Upgrade the GoCD server stack, specifying a named scheduling rule for gocdsrv_hst
+ Upgrade the GoCD server stack, specifying a named scheduling rule for **gocdsrv_hst**
 
  Launch the stack.
 
