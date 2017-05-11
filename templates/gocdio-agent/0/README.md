@@ -8,10 +8,10 @@
 
 ### Usage:
 
-  Obtain the auto-registration key from config XML in the GoCD server.
+ Obtain the auto-registration key from config XML in the GoCD server.
 
-  Add the GoCD agent stack.
+ Add the GoCD agent stack, specifying the **gocdio-server service**, the number of agents required, and inputting the registration key.
 
-  Upgrade the GoCD agent stack, specifying a named host scheduling rule for **gocdagt_hst**.
+ Upgrade the GoCD agent stack, specifying a named host scheduling rule for **gocdagt_hst**.
 
-  Launch the GoCD agent stack, specifying the **gocdio-server service**, the number of agents required, and inputting the registration key.
+ Launch the GoCD agent stack.
