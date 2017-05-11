@@ -2,9 +2,11 @@
 
 ### Info:
 
- This template creates and configures a GoCD server instance with data HA.
+ To be used only with the STCL-Tech GoCD Terraform plan - https://github.com/SkeltonThatcher/aws-terraform-rancher-single-node-ha-gocd
 
- It utilises an AWS EC2 EBS volume for /godata.
+ Creates and configures a GoCD server instance with data HA.
+
+ Utilises an AWS EC2 EBS volume for /godata.
 
 ### Usage:
 
@@ -18,6 +20,10 @@
  volumeType = gp2
  size = 10
  ```
+
+ Add the GoCD server stack.
+
+ Upgrade the GoCD server stack, specifying a named scheduling rule for gocdsrv_hst
 
  Launch the stack.
 
