@@ -23,7 +23,7 @@
 
  Add the GoCD server stack.
 
- Upgrade the GoCD server stack, specifying a named scheduling rule for **gocdsrv_hst**
+ Upgrade the GoCD server stack, creating a named host scheduling rule for **gocdsrv_hst**
 
  Launch the stack.
 

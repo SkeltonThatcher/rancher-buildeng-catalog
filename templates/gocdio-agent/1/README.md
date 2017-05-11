@@ -12,6 +12,6 @@
 
  Add the GoCD agent stack, specifying the **gocdio-server service**, the number of agents required, and inputting the registration key.
 
- Upgrade the GoCD agent stack, specifying a named host scheduling rule for **gocdagt_hst**.
+ Upgrade the GoCD agent stack, creating a named host scheduling rule for **gocdagt_hst**.
 
  Launch the GoCD agent stack.
