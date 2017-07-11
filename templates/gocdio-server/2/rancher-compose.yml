@@ -1,10 +1,10 @@
 .catalog:
   name: gocdio-server
-  version: 17.4.0-rancher1
+  version: 17.7.0-rancher1
   description: |
     STCL GoCD Server
   maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com"
-  tested_rancher_version: v1.5.6
+  tested_rancher_version: v1.6.3
   uuid: goserver-0
   questions:
     - variable: public_port
