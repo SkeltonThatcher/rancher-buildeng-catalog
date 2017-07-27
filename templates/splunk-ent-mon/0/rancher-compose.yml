@@ -23,8 +23,14 @@
       label: "Volume driver:"
       default: "rancher-ebs"
       required: true
-      type: "string"
-splunk-ent-mon:
+      default: "local"
+      type: enum
+      options:
+        - local
+        - rancher-nfs
+        - rancher-efs
+        - rancher-ebs
+splunk:
   scale: 1
   retain_ip: true
   health_check:

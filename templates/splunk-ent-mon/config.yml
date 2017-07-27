@@ -1,5 +1,6 @@
 name: splunk-ent-mon
 description: |
   (EXPERIMENTAL) STCL-Tech Splunk Enterprise Monitor
+version: 6.5.3-monitor
 category: Logging and Monitoring
 maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com"
