@@ -1,4 +1,4 @@
-# STCL-TECH Splunk Enterprise Monitor
+# STCL-Tech Splunk Enterprise Monitor
 
 ### Info:
 
