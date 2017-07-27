@@ -1,0 +1,18 @@
+splunk:
+  image: splunk/splunk:6.5.3-monitor
+  hostname: splunkenterprise
+  environment:
+    SPLUNK_START_ARGS: --accept-license --answer-yes
+    SPLUNK_ENABLE_LISTEN: 9997
+    SPLUNK_ADD: tcp 1514
+    SPLUNK_USER: root
+  volumes:
+    - ${data_volume}:/opt/splunk
+    - /var/lib/docker/containers:/host/containers:ro
+    - /var/run/docker.sock:/var/run/docker.sock:ro
+  volume_driver: ${volume_driver}
+  ports:
+    - ${public_port}:8000
+    - 9997:9997
+    - 8088:8088
+    - 1514:1514
