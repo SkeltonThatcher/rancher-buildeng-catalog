@@ -24,7 +24,7 @@
       default: "rancher-ebs"
       required: true
       type: "string"
-splunk-ent-mon:
+splunk:
   scale: 1
   retain_ip: true
   health_check:
