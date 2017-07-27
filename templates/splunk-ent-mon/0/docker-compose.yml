@@ -1,5 +1,6 @@
 splunk:
   image: splunk/splunk:6.5.3-monitor
+  hostname: splunkenterprise
   environment:
     SPLUNK_START_ARGS: --accept-license --answer-yes
     SPLUNK_ENABLE_LISTEN: 9997
