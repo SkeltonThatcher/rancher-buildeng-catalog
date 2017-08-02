@@ -7,8 +7,7 @@ Included catalog items:
 * GoCD server
 * GoCD agent
 * TeamCity server
-
-
+* Splunk Enterprise Monitor
 
 ---
 
