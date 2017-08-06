@@ -1,4 +1,4 @@
-name: splunk-ent-mon
+name: Splunk Enterprise Monitor
 description: |
   STCL-Tech Splunk Enterprise Monitor
 version: 6.5.3-monitor

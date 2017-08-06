@@ -1,11 +1,11 @@
 .catalog:
-  name: splunk-ent-mon
+  name: Splunk Enterprise Monitor
   version: 6.5.3-monitor
   description: |
     STCL-Tech Splunk Enterprise Monitor
   maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com"
   uuid: splunk-ent-mon-0
-vplunk:
+vsplunk:
   scale: 1
   start_on_create: true
 splunk:
