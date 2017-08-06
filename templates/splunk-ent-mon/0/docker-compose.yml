@@ -10,7 +10,7 @@ services:
     labels:
       io.rancher.container.pull_image: always
   splunk:
-    image: splunk/6.5.3-monitor
+    image: splunk/splunk:6.5.3-monitor
     hostname: splunkenterprise
     environment:
       SPLUNK_ADD: tcp 1514
