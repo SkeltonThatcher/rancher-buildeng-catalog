@@ -12,7 +12,7 @@
       required: true
       default: "splunk_etc"
       type: "string"
-    - variable: "_volume"
+    - variable: "var_volume"
       description: "Volume for /opt/splunk/var data"
       label: "Var volume:"
       required: true
