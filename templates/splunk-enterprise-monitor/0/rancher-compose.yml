@@ -5,6 +5,25 @@
     STCL-Tech Splunk Enterprise Monitor (Experimental)
   maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com"
   uuid: splunk-ent-mon-0
+  questions:
+    - variable: "etc_volume"
+      description: "Volume for /opt/splunk/etc data"
+      label: "Etc volume:"
+      required: true
+      default: "splunk_etc"
+      type: "string"
+    - variable: "_volume"
+      description: "Volume for /opt/splunk/var data"
+      label: "Var volume:"
+      required: true
+      default: "splunk_var"
+      type: "string"
+    - variable: "volume_driver"
+      description: "The volume driver type"
+      label: "Volume driver:"
+      default: "rancher-ebs"
+      required: true
+      type: "string"
 vsplunk:
   scale: 1
   start_on_create: true

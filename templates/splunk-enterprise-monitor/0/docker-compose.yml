@@ -4,8 +4,9 @@ services:
     image: busybox
     stdin_open: true
     volumes:
-    - /opt/splunk/etc
-    - /opt/splunk/var
+    - ${etc_volume}:/opt/splunk/etc
+    - ${var_volume}:/opt/splunk/var
+    volume_driver: ${volume_driver}
     tty: true
     labels:
       io.rancher.container.pull_image: always
@@ -18,7 +19,6 @@ services:
       SPLUNK_START_ARGS: --accept-license --answer-yes
       SPLUNK_USER: root
     stdin_open: true
-    volumes:
     - /var/lib/docker/containers:/host/containers:ro
     - /var/run/docker.sock:/var/run/docker.sock:ro
     tty: true
