@@ -19,6 +19,7 @@ services:
       SPLUNK_START_ARGS: --accept-license --answer-yes
       SPLUNK_USER: root
     stdin_open: true
+    volumes:
     - /var/lib/docker/containers:/host/containers:ro
     - /var/run/docker.sock:/var/run/docker.sock:ro
     tty: true
