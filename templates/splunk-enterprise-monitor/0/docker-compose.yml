@@ -4,12 +4,10 @@ services:
     image: busybox
     stdin_open: true
     volumes:
-    - ${etc_volume}:/opt/splunk/etc
-    - ${var_volume}:/opt/splunk/var
-    volume_driver: ${volume_driver}
+    - splunk-etc:/opt/splunk/etc
+    - splunk-var:/opt/splunk/var
+    volume_driver: ${VOLUME_DRIVER}
     tty: true
-    labels:
-      io.rancher.container.pull_image: always
   splunk:
     image: splunk/splunk:6.5.3-monitor
     hostname: splunkenterprise
@@ -31,5 +29,11 @@ services:
     - 8088:8088/tcp
     - 9997:9997/tcp
     labels:
-      io.rancher.container.pull_image: always
       io.rancher.sidekicks: vsplunk
+volumes:
+  splunk-etc:
+    driver: ${VOLUME_DRIVER}
+    per_container: true
+  splunk-var:
+    driver: ${VOLUME_DRIVER}
+    per_container: true
