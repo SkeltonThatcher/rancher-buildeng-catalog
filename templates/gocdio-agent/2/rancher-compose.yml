@@ -15,7 +15,7 @@ catalog:
       default: "gocdio-server/gocdio-server"
       required: true
       type: "service"
-    - variable: "SCALE"
+    - variable: "scale"
       description: "The amount of GoCD agents required"
       label: "Agent scale amount"
       required: true
@@ -28,5 +28,5 @@ catalog:
       default: 1234567890-0987654321-1234567890
       type: "string"
 gocdio-agent:
-  scale: ${SCALE}
+  scale: ${scale}
   retain_ip: true
