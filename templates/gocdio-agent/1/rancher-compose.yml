@@ -16,8 +16,8 @@ catalog:
       required: true
       type: "service"
     - variable: "SCALE"
-      description: "GoCD agent instances"
-      label: "Instances:"
+      description: "The amount of GoCD agents required"
+      label: "Agent scale amount"
       required: true
       default: 2
       type: "int"
