@@ -34,12 +34,12 @@ volumes:
   splunk-etc:
     driver: ${VOLUME_DRIVER}
     per_container: true
-    options:
+    driver_opts:
       size: 10
       volumeType: gp2
   splunk-var:
     driver: ${VOLUME_DRIVER}
     per_container: true
-    options:
+    driver_opts:
       size: 10
       volumeType: gp2
