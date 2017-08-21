@@ -21,7 +21,7 @@
  size = 10
  ```
 
- Launch the stack.
+ Launch the stack, choosing rancher-ebs as the volume driver.
 
  The GoCD server will be available at http://<HOST_IP>:8153
 
