@@ -30,16 +30,3 @@ services:
     - 9997:9997/tcp
     labels:
       io.rancher.sidekicks: vsplunk
-volumes:
-  splunk-etc:
-    driver: ${VOLUME_DRIVER}
-    per_container: true
-    driver_opts:
-      size: 10
-      volumeType: gp2
-  splunk-var:
-    driver: ${VOLUME_DRIVER}
-    per_container: true
-    driver_opts:
-      size: 10
-      volumeType: gp2
