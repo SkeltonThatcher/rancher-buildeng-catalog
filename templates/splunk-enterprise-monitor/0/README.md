@@ -8,7 +8,10 @@
 
 ### Usage:
 
-  *Example configuration using EBS (NFS & EFS options follow a similar method)*
+
+  Example configuration using EBS
+
+  *(NFS & EFS options follow a similar method)*
 
   Install the Rancher EBS plugin stack first.
 
