@@ -28,6 +28,8 @@
 
   Once launched, the Splunk Enterprise Monitor UI will be available at http://<HOST_IP_OR_DNS_NAME>:8000
 
-  *NOTE*
+  *NOTES*
 
-  The Splunk UI and services ingress are dependent on Rancher host security group rules.
+  - Splunk UI and service ingress are dependent on Rancher host security group rules.
+
+  - For EBS HA (vol re-attach) all Rancher hosts must be launched within the same AZ.
