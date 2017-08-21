@@ -41,5 +41,5 @@ volumes:
     driver: ${VOLUME_DRIVER}
     per_container: true
     options:
-      size:10
+      size: 10
       volumeType: gp2
