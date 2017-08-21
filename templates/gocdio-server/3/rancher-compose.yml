@@ -1,0 +1,32 @@
+version: '2'
+catalog:
+  name: gocdio-server
+  version: 17.8.0-rancher1
+  description: |
+    STCL GoCD Server
+  maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com>"
+  tested_rancher_version: v1.6.7
+  uuid: goserver-0
+  questions:
+    - variable: "VOLUME_DRIVER"
+      description: "The volume driver to use"
+      label: "Volume Driver"
+      required: true
+      default: "local"
+      type: enum
+      options:
+        - local
+        - rancher-nfs
+        - rancher-efs
+        - rancher-ebs
+services:
+  gocdio-server:
+    scale: 1
+    retain_ip: true
+    health_check:
+      port: 8153
+      interval: 5000
+      unhealthy_threshold: 5
+      request_line: GET /go/agents HTTP/1.0
+      healthy_threshold: 2
+      response_timeout: 5000

@@ -6,7 +6,7 @@ services:
       io.rancher.container.hostname_override: container_name
       gocd.role: agent
     tty: true
-    image: gocd/gocd-agent-ubuntu-16.04:v17.7.0
+    image: gocd/gocd-agent-ubuntu-16.04:v17.8.0
     external_links:
     - ${GOSERVER_IP}:gocdio-server
     environment:
