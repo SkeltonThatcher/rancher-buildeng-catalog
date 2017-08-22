@@ -19,5 +19,3 @@ volumes:
     driver: ${VOLUME_DRIVER}
     external: true
     per_container: true
-    driver_opts:
-      size: '10'
