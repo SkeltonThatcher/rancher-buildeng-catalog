@@ -2,7 +2,7 @@
 
 ### Info:
 
- This custom catalog item presents an STCL-Tech modified installation of Splunk Enterprise Monitor for Docker using the [official Splunk image](https://hub.docker.com/r/splunk/splunk/). It offers volume options via a Busybox sidekick for /opt/splunk/etc and /opt/splunk/var data to ether local, NFS or AWS EBS/EFS mounts.
+ This custom catalog item presents an STCL-Tech modified installation of Splunk Enterprise Monitor for Docker using the [official Splunk image](https://hub.docker.com/r/splunk/splunk/). It offers volume options via a Busybox sidekick for /opt/splunk/etc and /opt/splunk/var data to either local, NFS or AWS EBS/EFS mounts.
 
  The image comes with some data inputs activated (e.g., file monitor of docker host JSON logs, HTTP Event Collector, Syslog, etc.). It also includes the Docker app which has dashboards to help you analyze collected logs and docker information such as stats, events, tops, and inspect from your running images.
 
