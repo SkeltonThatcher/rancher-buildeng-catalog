@@ -14,8 +14,3 @@ services:
     - 8154:8154
     labels:
       io.rancher.container.hostname_override: container_name
-volumes:
-  godata:
-    driver: ${VOLUME_DRIVER}
-    external: true
-    per_container: true
