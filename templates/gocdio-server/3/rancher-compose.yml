@@ -19,7 +19,7 @@ catalog:
         - rancher-nfs
         - rancher-efs
         - rancher-ebs
-    - variable: "SPLUNK_FORWARD_SERVER"
+    - variable: "SPLUNK_ENT_SERVER"
       description: "The URL of the Splunk Enterprise Server"
       label: "Splunk Enterprise Server"
       required: true

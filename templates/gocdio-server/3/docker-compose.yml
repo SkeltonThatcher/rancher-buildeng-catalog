@@ -22,7 +22,7 @@ services:
     image: splunk/universalforwarder:6.6.3
     environment:
       SPLUNK_START_ARGS: --accept-license
-      SPLUNK_FORWARD_SERVER: ${SERVER_NAME}:9997
+      SPLUNK_FORWARD_SERVER: ${SPLUNK_ENT_SERVER}:9997
       SPLUNK_ADD: monitor /godata/logs/
     volumes:
     - splunk-etc:/opt/splunk/etc
