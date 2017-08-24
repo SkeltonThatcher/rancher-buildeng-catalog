@@ -19,6 +19,11 @@ catalog:
         - rancher-nfs
         - rancher-efs
         - rancher-ebs
+    - variable: "SPLUNK_FORWARD_SERVER"
+      description: "The URL of the Splunk Enterprise Server"
+      label: "Splunk Enterprise Server"
+      required: true
+      type: "string"
 services:
   gocdio-server:
     scale: 1
@@ -30,3 +35,7 @@ services:
       request_line: GET /go/agents HTTP/1.0
       healthy_threshold: 2
       response_timeout: 5000
+  splunkuniversalforwarder:
+    scale: 1
+    retain_ip: true
+    start_on_create: false

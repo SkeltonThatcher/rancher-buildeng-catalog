@@ -14,3 +14,23 @@ services:
     - 8154:8154
     labels:
       io.rancher.container.hostname_override: container_name
+      io.rancher.sidekicks: splunkuniversalforwarder
+  splunkuniversalforwarder:
+    labels:
+      splunk.role: forwarder
+    tty: true
+    image: splunk/universalforwarder:6.6.3
+    environment:
+      SPLUNK_START_ARGS: --accept-license
+      SPLUNK_FORWARD_SERVER: ${SERVER_NAME}:9997
+      SPLUNK_ADD: monitor /godata/logs/
+    volumes:
+    - splunk-etc:/opt/splunk/etc
+    - splunk-var:/opt/splunk/var
+    volumes_from:
+    - gocdio-server
+    ports:
+    - "8000:8000"
+    - "9997:9997"
+    - "8088:8088"
+    - "1514:1514"
