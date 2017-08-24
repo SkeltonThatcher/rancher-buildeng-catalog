@@ -1,11 +1,11 @@
 version: '2'
 catalog:
-  name: Splunk Enterprise Monitor
-  version: 6.5.3-monitor
+  name: Artifactory Pro
+  version: 5.4.6
   description: |
-    STCL-Tech Splunk Enterprise Monitor (Experimental)
+    STCL-Tech Artifactory Pro (Experimental)
   maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com>"
-  uuid: splunk-ent-mon-0
+  uuid: artifactory-pro-0
   questions:
     - variable: "VOLUME_DRIVER"
       description: "The volume driver to use"
@@ -19,18 +19,9 @@ catalog:
         - rancher-efs
         - rancher-ebs
 services:
-  vsplunk:
+  artifactory-pro:
     scale: 1
     start_on_create: true
-  splunk:
+  vartifactory:
     scale: 1
     start_on_create: true
-    retain_ip: true
-    health_check:
-      port: 8000
-      interval: 2000
-      initializing_timeout: 60000
-      unhealthy_threshold: 3
-      strategy: recreate
-      healthy_threshold: 2
-      response_timeout: 2000

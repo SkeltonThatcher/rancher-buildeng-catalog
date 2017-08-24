@@ -1,6 +1,6 @@
-name: Splunk Enterprise Monitor
+name: Artifactory Pro
 description: |
-  STCL-Tech Splunk Enterprise Monitor (Experimental)
-version: 6.5.3-monitor
+  STCL-Tech Artifactory Pro (Experimental)
+version: 5.4.6
 category: Logging and Monitoring
 maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com>"
