@@ -12,9 +12,8 @@
 
   Install the Rancher EBS plugin stack first.
 
-  Using the Rancher storage option, pre-create x2 volumes named splunk-etc and splunk-var
-
-  Set the volume size and type pairs, e.g:
+  Using the Rancher storage option, pre-create a volume named artifactory
+  Set the volume size and type:
 
   ```
   volumeType = gp2
