@@ -13,7 +13,8 @@
   Install the Rancher EBS plugin stack first.
 
   Using the Rancher storage option, pre-create a volume named artifactory
-  Set the volume size and type:
+
+  Set the volume size and type keypairs:
 
   ```
   volumeType = gp2
