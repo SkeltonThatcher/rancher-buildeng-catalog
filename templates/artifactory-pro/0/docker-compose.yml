@@ -1,8 +1,4 @@
 version: '2'
-volumes:
-  artifactory:
-    external: true
-    driver: rancher-ebs
 services:
   artifactory-pro:
     image: docker.bintray.io/jfrog/artifactory-pro:5.4.6
