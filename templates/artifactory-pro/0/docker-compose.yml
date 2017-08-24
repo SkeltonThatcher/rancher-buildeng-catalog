@@ -5,7 +5,7 @@ volumes:
     driver: rancher-ebs
 services:
   artifactory-pro:
-    image: docker.bintray.io/jfrog/artifactory-pro:latest
+    image: docker.bintray.io/jfrog/artifactory-pro:5.4.6
     stdin_open: true
     tty: true
     volumes_from:
