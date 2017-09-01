@@ -1,0 +1,6 @@
+name: Ubuntu
+description: |
+  STCL-Tech Ubuntu (Experimental)
+version: 16.04LTS
+category: Linux Server
+maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com>"

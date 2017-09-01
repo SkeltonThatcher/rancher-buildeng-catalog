@@ -1,0 +1,28 @@
+version: '2'
+catalog:
+  name: Ubuntu
+  version: 16.04LTS
+  description: |
+    STCL-Tech Ubuntu (Dev)
+  maintainer: "Rich Bos <richard.bosomworth@skeltonthatcher.com>"
+  uuid: ubuntu-0
+  questions:
+    - variable: "VOLUME_DRIVER"
+      description: "The volume driver to use"
+      label: "Volume Driver"
+      required: true
+      default: "local"
+      type: enum
+      options:
+        - local
+        - rancher-nfs
+        - rancher-efs
+        - rancher-ebs
+services:
+  vubuntu:
+    scale: 1
+    start_on_create: true
+  ubuntu:
+    scale: 1
+    start_on_create: true
+    retain_ip: true
