@@ -19,10 +19,10 @@ catalog:
         - rancher-efs
         - rancher-ebs
 services:
-  vubuntu:
-    scale: 1
-    start_on_create: true
   ubuntu:
     scale: 1
     start_on_create: true
     retain_ip: true
+  vubuntu:
+    scale: 1
+    start_on_create: true

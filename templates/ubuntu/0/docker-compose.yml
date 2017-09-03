@@ -1,12 +1,5 @@
 version: '2'
 services:
-  vubuntu:
-    image: busybox
-    stdin_open: true
-    volumes:
-    - ubuntu:/tmp
-    volume_driver: ${VOLUME_DRIVER}
-    tty: true
   ubuntu:
     image: ubuntu:16.04
     hostname: ubuntu
@@ -17,4 +10,11 @@ services:
     ports:
     - 22:22/tcp
     labels:
-      io.rancher.sidekicks: ubuntu
+      io.rancher.sidekicks: vubuntu
+  vubuntu:
+    image: busybox
+    stdin_open: true
+    volumes:
+    - ubuntu:/tmp
+    volume_driver: ${VOLUME_DRIVER}
+    tty: true
